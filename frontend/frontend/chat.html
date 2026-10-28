@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Chat DAS IA</title>
+</head>
+
+<body>
+
+<h1>🤖 DAS IA</h1>
+
+<div id="messages">
+<p><b>DAS IA :</b> Bonjour, comment puis-je vous aider ?</p>
+</div>
+
+<br>
+
+<input
+type="text"
+id="question"
+placeholder="Posez votre question..."
+>
+
+<button onclick="envoyer()">
+Envoyer
+</button>
+
+<script>
+
+function envoyer(){
+
+let question =
+document.getElementById("question").value;
+
+document.getElementById("messages").innerHTML +=
+"<p><b>Vous :</b> " +
+question +
+"</p>";
+
+document.getElementById("question").value="";
+
+}
+
+</script>
+
+</body>
+</html>
