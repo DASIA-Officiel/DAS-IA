@@ -9,8 +9,8 @@
 
 body{
 font-family:Arial,sans-serif;
-background:#f4f4f4;
 margin:0;
+background:#f4f7fb;
 }
 
 header{
@@ -20,12 +20,20 @@ padding:20px;
 text-align:center;
 }
 
+.container{
+padding:20px;
+}
+
 .card{
 background:white;
-margin:20px;
 padding:20px;
+margin-bottom:15px;
 border-radius:10px;
 box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+color:#0F4C81;
 }
 
 </style>
@@ -35,12 +43,20 @@ box-shadow:0 0 10px rgba(0,0,0,0.1);
 <body>
 
 <header>
+
 <h1>⚙️ Administration DAS IA</h1>
+
+<p>
+Tableau de bord administrateur
+</p>
+
 </header>
+
+<div class="container">
 
 <div class="card">
 <h2>👥 Utilisateurs</h2>
-<p>0 utilisateur</p>
+<p>0 utilisateur enregistré</p>
 </div>
 
 <div class="card">
@@ -50,12 +66,19 @@ box-shadow:0 0 10px rgba(0,0,0,0.1);
 
 <div class="card">
 <h2>💳 Abonnés Premium</h2>
-<p>0 abonné</p>
+<p>0 abonné Premium</p>
 </div>
 
 <div class="card">
 <h2>💰 Revenus</h2>
 <p>0 FCFA</p>
+</div>
+
+<div class="card">
+<h2>📊 Statistiques</h2>
+<p>Données en préparation</p>
+</div>
+
 </div>
 
 </body>
