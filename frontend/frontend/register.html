@@ -45,6 +45,13 @@ cursor:pointer;
 border-radius:6px;
 }
 
+#message{
+margin-top:10px;
+color:green;
+font-weight:bold;
+text-align:center;
+}
+
 </style>
 
 </head>
@@ -55,23 +62,36 @@ border-radius:6px;
 
 <h1>🤖 DAS IA</h1>
 
-<input type="text" placeholder="Nom complet">
+<input id="nom" type="text" placeholder="Nom complet">
 
-<input type="text" placeholder="Téléphone">
+<input id="telephone" type="text" placeholder="Téléphone">
 
-<input type="email" placeholder="Email">
+<input id="email" type="email" placeholder="Email">
 
-<input type="text" placeholder="Pays">
+<input id="pays" type="text" placeholder="Pays">
 
-<input type="text" placeholder="Ville">
+<input id="ville" type="text" placeholder="Ville">
 
-<input type="password" placeholder="Mot de passe">
+<input id="password" type="password" placeholder="Mot de passe">
 
-<button>
+<button onclick="inscription()">
 Créer mon compte
 </button>
 
+<p id="message"></p>
+
 </div>
+
+<script>
+
+function inscription(){
+
+document.getElementById("message").innerHTML =
+"✅ Compte DAS IA créé avec succès (version démonstration)";
+
+}
+
+</script>
 
 </body>
 </html>
