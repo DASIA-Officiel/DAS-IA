@@ -24,6 +24,11 @@ width:400px;
 box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
+h1{
+text-align:center;
+color:#0F4C81;
+}
+
 input{
 width:100%;
 padding:12px;
@@ -33,15 +38,18 @@ margin-bottom:10px;
 button{
 width:100%;
 padding:12px;
-background:#0F4C81;
+background:#16A34A;
 color:white;
 border:none;
 cursor:pointer;
+border-radius:6px;
 }
 
-h1{
+#message{
+margin-top:10px;
+color:green;
+font-weight:bold;
 text-align:center;
-color:#0F4C81;
 }
 
 </style>
@@ -54,13 +62,28 @@ color:#0F4C81;
 
 <h1>🤖 DAS IA</h1>
 
-<input type="email" placeholder="Email">
+<input id="email" type="email" placeholder="Email">
 
-<input type="password" placeholder="Mot de passe">
+<input id="password" type="password" placeholder="Mot de passe">
 
-<button>Se connecter</button>
+<button onclick="connexion()">
+Se connecter
+</button>
+
+<p id="message"></p>
 
 </div>
+
+<script>
+
+function connexion(){
+
+document.getElementById("message").innerHTML =
+"✅ Connexion réussie (version démonstration)";
+
+}
+
+</script>
 
 </body>
 </html>
